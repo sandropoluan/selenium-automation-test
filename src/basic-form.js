@@ -21,9 +21,9 @@ import {Builder, By, Key, until} from 'selenium-webdriver';
                     await formElement2.findElement(By.id(`sum1`)).sendKeys(12);
                     await formElement2.findElement(By.id(`sum2`)).sendKeys(130);
                     await formElement2.findElement(By.className(`btn btn-default`)).click();
-                }, 1500);
-            }, 2000);
-        }, 1500);
+                }, 1000);
+            }, 1000);
+        }, 1000);
 
         setTimeout(async () => {
             await driver.quit()

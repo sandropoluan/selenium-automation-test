@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cb2abbb-6487-4e25-9062-da5240a4a76e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic-select.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="225">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -41,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/basic-form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="91" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="91" />
+            <state relative-caret-position="220">
+              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -50,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/basic-select.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+            <state relative-caret-position="141">
+              <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -65,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/selenium-webdriver/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
+            <state relative-caret-position="11355">
               <caret line="772" column="60" selection-start-line="772" selection-start-column="60" selection-end-line="772" selection-end-column="60" />
             </state>
           </provider>
@@ -74,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/startDriver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="105">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
@@ -87,12 +89,12 @@
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-end-line="1" />
+              <caret line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env.dist">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -121,18 +123,17 @@
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/core/startDriver.js" />
-        <option value="$PROJECT_DIR$/src/basic-form.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/basic-select.js" />
         <option value="$PROJECT_DIR$/.env.dist" />
+        <option value="$PROJECT_DIR$/src/basic-form.js" />
+        <option value="$PROJECT_DIR$/src/basic-select.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="840" />
+    <option name="height" value="841" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -140,7 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,16 +148,23 @@
               <item name="ruangguru" type="b2602c69:ProjectViewProjectNode" />
               <item name="ruangguru" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ruangguru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ruangguru" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -187,15 +194,16 @@
       <option name="presentableId" value="Default" />
       <updated>1567775737591</updated>
       <workItem from="1567775739043" duration="4452000" />
-      <workItem from="1567782642647" duration="4646000" />
+      <workItem from="1567782642647" duration="5045000" />
+      <workItem from="1567877384799" duration="160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9098000" />
+    <option name="totallyTimeSpent" value="9657000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="23" width="1440" height="840" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31430584" />
@@ -210,7 +218,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.38368985" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4879679" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -224,6 +232,13 @@
     <entry file="file://$PROJECT_DIR$/node_modules/.bin/babel">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/selenium-webdriver/lib/webdriver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-823">
+          <caret line="621" column="6" selection-start-line="621" selection-start-column="6" selection-end-line="621" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/.bin/babel-node">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -234,37 +249,16 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/selenium-webdriver/lib/webdriver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-823">
-          <caret line="621" column="6" selection-start-line="621" selection-start-column="6" selection-end-line="621" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/selenium-webdriver/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
+        <state relative-caret-position="11355">
           <caret line="772" column="60" selection-start-line="772" selection-start-column="60" selection-end-line="772" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/startDriver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="105">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
@@ -272,10 +266,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/basic-form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="91" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="91" />
+        <state relative-caret-position="220">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
@@ -284,25 +306,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/basic-select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        <state relative-caret-position="141">
+          <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

@@ -13,7 +13,6 @@ import {Builder, By, Key, until} from 'selenium-webdriver';
         await driver.sleep(1000);
 
         const multiSelectElement = await driver.findElement(By.id(`multi-select`));
-        await driver.sleep(1000);
         await driver.executeScript("arguments[0].scrollIntoView();", multiSelectElement);
 
         await driver.sleep(500);
