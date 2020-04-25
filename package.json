@@ -16,7 +16,7 @@
     "config": "^3.2.2",
     "dotenv": "^8.1.0",
     "minimist": "^1.2.0",
-    "selenium-webdriver": "^4.0.0-alpha.4"
+    "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
