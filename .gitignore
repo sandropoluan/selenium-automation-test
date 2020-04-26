@@ -1,0 +1,7 @@
+/node_modules
+.env
+
+# editor
+.idea
+.vscode
+.scannerwork/
