@@ -1,7 +1,7 @@
-/node_modules
+node_modules/
 .env
 
 # editor
-.idea
-.vscode
+.idea/
+.vscode/
 .scannerwork/
