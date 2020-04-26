@@ -1,5 +1,5 @@
 {
-  "name": "ruangguru",
+  "name": "shopee",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,11 +8,14 @@
     "babel-version": "babel --version",
     "basic": "babel-node src/basic-form.js",
     "basic-select": "babel-node src/basic-select.js",
+    "shopee": "babel-node src/shopee.js",
     "build": "babel src -d lib"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chromedriver": "^81.0.0",
+    "chromium": "^2.1.2",
     "config": "^3.2.2",
     "dotenv": "^8.1.0",
     "minimist": "^1.2.0",

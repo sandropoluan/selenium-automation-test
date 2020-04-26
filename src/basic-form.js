@@ -4,11 +4,12 @@ import {Builder, By, Key, until} from 'selenium-webdriver';
 
 (async () => {
     const driver = await startDriver();
+
     await driver.get(`https://www.seleniumeasy.com/test/basic-first-form-demo.html`);
     try {
         await setTimeout(async () => {
 
-            const formElement = await driver.findElement(By.id(`get-input`));
+/*            const formElement = await driver.findElement(By.id(`get-input`));
             const inputElement = await formElement.findElement(By.id(`user-message`));
             const btnElement = await formElement.findElement(By.className(`btn btn-default`));
             await inputElement.sendKeys(`Hello test input selenium`);
@@ -22,14 +23,15 @@ import {Builder, By, Key, until} from 'selenium-webdriver';
                     await formElement2.findElement(By.id(`sum2`)).sendKeys(130);
                     await formElement2.findElement(By.className(`btn btn-default`)).click();
                 }, 1000);
-            }, 1000);
+            }, 1000);*/
         }, 1000);
 
         setTimeout(async () => {
             await driver.quit()
-        }, 20000);
+        }, 200000000);
 
     } finally {
 
     }
 })();
+
