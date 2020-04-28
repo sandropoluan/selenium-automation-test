@@ -1,6 +1,6 @@
 import startDriver from "./core/startDriver";
 import {expect} from "chai";
-import {beforeEach,before} from "mocha"
+import {beforeEach,before, after} from "mocha"
 import config from "config";
 import {Builder, By, Key, until} from 'selenium-webdriver';
 import dotenv from "dotenv";
@@ -8,11 +8,12 @@ import dotenv from "dotenv";
 const cookieArray = `${process.env.COOKIE}`.split("; ");
 
 describe("Game Board", () => {
-
-  let element;
+  let driver, element;
 
   before(async () => {
-    const driver = await startDriver();
+
+    driver = await startDriver();
+
     await driver.manage().window().setRect({width: 340, height: 800});
 
     await driver.get(`${process.env.GAME_URL}`);
@@ -40,4 +41,8 @@ describe("Game Board", () => {
   it("Page is loaded", async () => {
     expect(!!element).to.equal(true);
   });
+
+  after(() => {
+    driver.quit();
+  })
 });
