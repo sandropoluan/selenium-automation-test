@@ -8,7 +8,7 @@ import dotenv from "dotenv";
 const cookieArray = `${process.env.COOKIE}`.split("; ");
 
 describe("Game Board", () => {
-  let driver, element;
+  let driver, firstBlock, rollElement;
 
   before(async () => {
 
@@ -34,15 +34,28 @@ describe("Game Board", () => {
     await driver.get(`${process.env.GAME_URL}`);
 
     await driver.sleep(3000);
-    const selectElements = await driver.findElement(By.id('s-0'));
-    element = selectElements;
+    try {
+      firstBlock = await driver.findElement(By.id('s-0'));
+    } catch (e) {
+      firstBlock = null;
+    }
+
+    try {
+      rollElement = await driver.findElement(By.xpath("//*[text()[contains(.,'Klik untuk melempar')]]"));
+    } catch (e) {
+      rollElement = null;
+    }
   });
 
   it("Page is loaded", async () => {
-    expect(!!element).to.equal(true);
+    expect(!!firstBlock).to.equal(true);
+  });
+
+  it("Is login", async () => {
+    expect(!!rollElement).to.equal(true);
   });
 
   after(() => {
     driver.quit();
-  })
+  });
 });
