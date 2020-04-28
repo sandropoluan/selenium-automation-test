@@ -1,6 +1,6 @@
 import startDriver from "./core/startDriver";
 import {expect} from "chai";
-import {beforeEach,before, after} from "mocha"
+import {beforeEach, before, after} from "mocha"
 import config from "config";
 import {Builder, By, Key, until} from 'selenium-webdriver';
 import dotenv from "dotenv";
