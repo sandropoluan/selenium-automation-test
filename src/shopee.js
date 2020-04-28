@@ -1,37 +1,43 @@
 import startDriver from "./core/startDriver";
+import {expect} from "chai";
+import {beforeEach,before} from "mocha"
 import config from "config";
 import {Builder, By, Key, until} from 'selenium-webdriver';
 import dotenv from "dotenv";
 
 const cookieArray = `${process.env.COOKIE}`.split("; ");
 
-(async () => {
-  const driver = await startDriver();
+describe("Game Board", () => {
 
-  await driver.manage().window().setRect({width: 340, height: 800});
+  let element;
 
-  await driver.get(`${process.env.GAME_URL}`);
+  before(async () => {
+    const driver = await startDriver();
+    await driver.manage().window().setRect({width: 340, height: 800});
 
-  await new Promise(async resolve => {
-    cookieArray.map(async function (item) {
-      const arrayItem = item.split("=");
-      const name = arrayItem[0];
-      arrayItem.splice(0, 1);
-      const value = arrayItem.join("=");
-      await driver.manage().addCookie({name, value, domain: '.shopee.co.id', path: '/'});
+    await driver.get(`${process.env.GAME_URL}`);
+
+    await new Promise(async resolve => {
+      cookieArray.map(async function (item) {
+        const arrayItem = item.split("=");
+        const name = arrayItem[0];
+        arrayItem.splice(0, 1);
+        const value = arrayItem.join("=");
+        await driver.manage().addCookie({name, value, domain: '.shopee.co.id', path: '/'});
+      });
+      await driver.sleep(500);
+      resolve();
     });
-    resolve();
+
+    await driver.sleep(1000);
+    await driver.get(`${process.env.GAME_URL}`);
+
+    await driver.sleep(3000);
+    const selectElements = await driver.findElement(By.id('s-0'));
+    element = selectElements;
   });
 
-  await driver.sleep(1000);
-  await driver.get(`${process.env.GAME_URL}`);
-
-  const action = driver.actions();
-  try {
-    //const selectElement = await driver.findElement(By.id('s-0'));
-    await driver.sleep(1000);
-  } finally {
-    await driver.sleep(30000);
-    await driver.quit();
-  }
-})();
+  it("Page is loaded", async () => {
+    expect(!!element).to.equal(true);
+  });
+});

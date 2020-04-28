@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "babel-version": "babel --version",
-    "basic": "babel-node src/basic-form.js",
-    "basic-select": "babel-node src/basic-select.js",
-    "shopee": "babel-node src/shopee.js",
+    "shopee": "./node_modules/.bin/mocha --timeout 0 --require @babel/register src/shopee.js",
     "build": "babel src -d lib"
   },
   "author": "",
@@ -26,6 +23,11 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/plugin-proposal-export-default-from": "^7.5.2",
-    "@babel/preset-env": "^7.5.5"
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
   }
 }
